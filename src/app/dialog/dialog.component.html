@@ -1,0 +1,44 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Producat Name</mat-label>
+            <input formControlName="productName" matInput placeholder="Producat Name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Catogary</mat-label>
+            <mat-select formControlName="category" placeholder="Catogary">
+                <mat-option value="Fruits">Fruits</mat-option>
+                <mat-option value="Vegitables">Vegitables</mat-option>
+                <mat-option value="Electronics">Electronics</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <label ><h1>Product fresness</h1></label>
+            <mat-radio-group formControlName="freshness"  class="example-radio-group">
+            <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshnessList" [value]="fresh">
+                {{fresh}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input formControlName="price" matInput type="number" matInput placeholder="Price">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width">
+            <mat-label>Leave a comment</mat-label>
+            <textarea formControlName="comment" matInput></textarea>
+        </mat-form-field>
+    </form>
+    <div mat-dialog-action [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+    </div>
+
+</div>

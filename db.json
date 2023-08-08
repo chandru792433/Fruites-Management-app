@@ -1,0 +1,68 @@
+{
+  "productList": [
+    {
+      "productName": "Orange",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 80,
+      "comment": "ITs goood",
+      "date": "2023-08-17T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Banana",
+      "category": "Vegitables",
+      "freshness": "Second Hand",
+      "price": 89,
+      "comment": "Its good",
+      "date": "2023-08-24T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Lemon",
+      "category": "Vegitables",
+      "freshness": "Refurbished",
+      "price": 663,
+      "comment": "Its too bad",
+      "date": "2023-08-15T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "Kiw",
+      "category": "Electronics",
+      "freshness": "Second Hand",
+      "price": 855,
+      "comment": "Gjjjjjohd",
+      "date": "2023-08-18T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "Taja",
+      "category": "Electronics",
+      "freshness": "Brand New",
+      "price": 8997,
+      "comment": "Comments",
+      "date": "2023-08-15T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "productName": "Joy",
+      "category": "Vegitables",
+      "freshness": "Second Hand",
+      "price": 898,
+      "comment": "Good",
+      "date": "2023-08-11T18:30:00.000Z",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
